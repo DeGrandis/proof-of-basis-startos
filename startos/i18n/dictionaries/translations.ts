@@ -3,11 +3,11 @@ import { LangDict } from './default'
 export default {
   es_ES: {
     0: 'Servidor Electrum',
-    1: 'Dónde consulta Proof of Basis tus carteras. Automático usa Fulcrum si está instalado; si no, Electrs.',
+    1: 'Dónde consulta Proof of Basis tus billeteras. Automático usa Fulcrum si está instalado; si no, Electrs.',
     2: 'Automático',
     3: 'Fulcrum',
     4: 'Electrs',
-    5: 'Ninguno (lo configuraré en la app o no usaré carteras)',
+    5: 'Ninguno (lo configuraré en la app o no usaré billeteras)',
     6: 'Usar Ollama para el asistente',
     7: 'Cuando Ollama está instalado en este servidor, el asistente lo usa.',
     8: 'Servicios del nodo',

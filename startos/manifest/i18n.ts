@@ -14,7 +14,7 @@ export const fulcrumDescription = {
   en_US:
     'Optional: looks up your wallets on your own node. Used automatically when installed.',
   es_ES:
-    'Opcional: consulta tus carteras en tu propio nodo. Se usa automáticamente si está instalado.',
+    'Opcional: consulta tus billeteras en tu propio nodo. Se usa automáticamente si está instalado.',
   de_DE:
     'Optional: fragt Ihre Wallets auf Ihrem eigenen Node ab. Wird automatisch verwendet, wenn es installiert ist.',
   pl_PL:
@@ -27,7 +27,7 @@ export const electrsDescription = {
   en_US:
     'Optional: looks up your wallets on your own node. Used automatically when installed and Fulcrum is not.',
   es_ES:
-    'Opcional: consulta tus carteras en tu propio nodo. Se usa automáticamente si está instalado y Fulcrum no.',
+    'Opcional: consulta tus billeteras en tu propio nodo. Se usa automáticamente si está instalado y Fulcrum no.',
   de_DE:
     'Optional: fragt Ihre Wallets auf Ihrem eigenen Node ab. Wird automatisch verwendet, wenn es installiert ist und Fulcrum nicht.',
   pl_PL:
@@ -53,7 +53,7 @@ export const long = {
   en_US:
     'Proof of Basis puts your bitcoin history in one place: your wallets, read straight from your node through Fulcrum or Electrs, and your exchange exports (Coinbase, River, Strike, Fold, or a spreadsheet of your own). It matches what moved between your own accounts, tracks the cost basis of every coin, and shows your gains, income and estimated tax for each year. An optional assistant answers questions about your records using Ollama on this server. Proof of Basis organizes your own records; it is not tax, legal or financial advice.',
   es_ES:
-    'Proof of Basis reúne todo tu historial de bitcoin en un solo lugar: tus carteras, leídas directamente de tu nodo a través de Fulcrum o Electrs, y las exportaciones de tus exchanges (Coinbase, River, Strike, Fold o una hoja de cálculo propia). Empareja lo que se movió entre tus propias cuentas, sigue la base de coste de cada moneda y muestra tus ganancias, ingresos e impuesto estimado de cada año. Un asistente opcional responde preguntas sobre tus registros usando Ollama en este servidor. Proof of Basis organiza tus propios registros; no es asesoramiento fiscal, legal ni financiero.',
+    'Proof of Basis reúne todo tu historial de bitcoin en un solo lugar: tus billeteras, leídas directamente de tu nodo a través de Fulcrum o Electrs, y las exportaciones de tus exchanges (Coinbase, River, Strike, Fold o una hoja de cálculo propia). Empareja lo que se movió entre tus propias cuentas, sigue la base de coste de cada moneda y muestra tus ganancias, ingresos e impuesto estimado de cada año. Un asistente opcional responde preguntas sobre tus registros usando Ollama en este servidor. Proof of Basis organiza tus propios registros; no es asesoramiento fiscal, legal ni financiero.',
   de_DE:
     'Proof of Basis bringt Ihre gesamte Bitcoin-Historie an einen Ort: Ihre Wallets, direkt von Ihrem Node über Fulcrum oder Electrs gelesen, und die Exporte Ihrer Börsen (Coinbase, River, Strike, Fold oder eine eigene Tabelle). Es ordnet zu, was zwischen Ihren eigenen Konten bewegt wurde, verfolgt die Anschaffungskosten jeder Münze und zeigt Ihre Gewinne, Einkünfte und die geschätzte Steuer für jedes Jahr. Ein optionaler Assistent beantwortet Fragen zu Ihren Daten mit Ollama auf diesem Server. Proof of Basis ordnet Ihre eigenen Unterlagen; es ist keine Steuer-, Rechts- oder Finanzberatung.',
   pl_PL:
