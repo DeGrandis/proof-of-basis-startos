@@ -19,7 +19,41 @@ export const manifest = setupManifest({
           'ghcr.io/degrandis/proof-of-basis:0.1.0@sha256:511caf1eea00a7eab89cf006851ce63ca2927d7453177ddb2679b0c2f5679cb0',
       },
       arch: ['x86_64', 'aarch64'],
-      emulateMissing: false,
+    },
+  },
+  dependencies: {
+    fulcrum: {
+      description: {
+        en_US:
+          'Optional: looks up your wallets on your own node. Used automatically when installed.',
+      },
+      optional: true,
+      metadata: {
+        title: 'Fulcrum',
+        icon: 'https://raw.githubusercontent.com/Start9Labs/fulcrum-startos/master/icon.png',
+      },
+    },
+    electrs: {
+      description: {
+        en_US:
+          'Optional: looks up your wallets on your own node. Used automatically when installed and Fulcrum is not.',
+      },
+      optional: true,
+      metadata: {
+        title: 'Electrs',
+        icon: 'https://raw.githubusercontent.com/Start9Labs/electrs-startos/refs/heads/master/icon.svg',
+      },
+    },
+    ollama: {
+      description: {
+        en_US:
+          'Optional: runs the assistant that answers questions about your records. Used automatically when installed.',
+      },
+      optional: true,
+      metadata: {
+        title: 'Ollama',
+        icon: 'https://raw.githubusercontent.com/Start9Labs/ollama-startos/master/icon.svg',
+      },
     },
   },
 })
