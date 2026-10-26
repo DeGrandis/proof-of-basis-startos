@@ -62,14 +62,19 @@ export async function chosenOllama(effects: T.Effects): Promise<string | null> {
     .const()
 }
 
-/**
- * The data volume at /data. StartOS mounts volumes owned by root and the image
- * runs as 65532 with no shell to chown with, so the mount maps root to 65532.
- */
+/** The data volume at /data. */
 export const dataMounts = sdk.Mounts.of().mountVolume({
   volumeId: 'main',
   subpath: null,
   mountpoint: '/data',
   readonly: false,
-  idmap: [{ fromId: 0, toId: 65532 }],
 })
+
+/**
+ * StartOS mounts volumes owned by root, and the image (run as 65532, with no
+ * shell to chown with) couldn't write to them. Remapping ownership on the
+ * mount (idmap) isn't permitted from inside the container on StartOS before
+ * 0.4.0.2, so the app runs as root in its (unprivileged) container instead.
+ * Numeric, because the image has no /etc/passwd to look a name up in.
+ */
+export const runAs = '0:0'

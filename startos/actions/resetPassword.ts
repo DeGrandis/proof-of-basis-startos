@@ -1,6 +1,6 @@
 import { i18n } from '../i18n'
 import { sdk } from '../sdk'
-import { dataMounts } from '../utils'
+import { dataMounts, runAs } from '../utils'
 
 export const resetPassword = sdk.Action.withoutInput(
   'reset-password',
@@ -24,7 +24,7 @@ export const resetPassword = sdk.Action.withoutInput(
       { imageId: 'proof-of-basis' },
       dataMounts,
       'reset-password',
-      (sub) => sub.execFail(['/btctax', 'reset-password']),
+      (sub) => sub.execFail(['/btctax', 'reset-password'], { user: runAs }),
     )
 
     return {

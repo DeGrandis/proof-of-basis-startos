@@ -1,6 +1,12 @@
 import { i18n } from './i18n'
 import { sdk } from './sdk'
-import { chosenIndexer, chosenOllama, dataMounts, uiPort } from './utils'
+import {
+  chosenIndexer,
+  chosenOllama,
+  dataMounts,
+  runAs,
+  uiPort,
+} from './utils'
 
 export const main = sdk.setupMain(async ({ effects }) => {
   console.info(i18n('Starting Proof of Basis'))
@@ -20,7 +26,7 @@ export const main = sdk.setupMain(async ({ effects }) => {
       dataMounts,
       'proof-of-basis-sub',
     ),
-    exec: { command: sdk.useEntrypoint(), env },
+    exec: { command: sdk.useEntrypoint(), env, user: runAs },
     ready: {
       display: i18n('Web Interface'),
       fn: () =>
