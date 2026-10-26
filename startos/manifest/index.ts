@@ -4,7 +4,7 @@ import { long, short } from './i18n'
 export const manifest = setupManifest({
   id: 'proof-of-basis',
   title: 'Proof of Basis',
-  license: 'Proprietary',
+  license: 'MIT',
   packageRepo: 'https://github.com/DeGrandis/proof-of-basis-startos',
   upstreamRepo: 'https://github.com/DeGrandis/proof-of-basis',
   marketingUrl: 'https://proofofbasis.degrand.is',
