@@ -4,9 +4,9 @@ const dict = {
   // actions/nodeServices.ts
   'Electrum server': 0,
   'Where Proof of Basis looks up your wallets. Automatic uses Fulcrum if it is installed, otherwise Electrs.': 1,
-  'Automatic': 2,
-  'Fulcrum': 3,
-  'Electrs': 4,
+  Automatic: 2,
+  Fulcrum: 3,
+  Electrs: 4,
   'None (I will set one in the app, or not use wallets)': 5,
   'Use Ollama for the assistant': 6,
   'When Ollama is installed on this server, the assistant uses it.': 7,
