@@ -1,5 +1,11 @@
 import { setupManifest } from '@start9labs/start-sdk'
-import { long, short } from './i18n'
+import {
+  electrsDescription,
+  fulcrumDescription,
+  long,
+  ollamaDescription,
+  short,
+} from './i18n'
 
 export const manifest = setupManifest({
   id: 'proof-of-basis',
@@ -23,10 +29,7 @@ export const manifest = setupManifest({
   },
   dependencies: {
     fulcrum: {
-      description: {
-        en_US:
-          'Optional: looks up your wallets on your own node. Used automatically when installed.',
-      },
+      description: fulcrumDescription,
       optional: true,
       metadata: {
         title: 'Fulcrum',
@@ -34,10 +37,7 @@ export const manifest = setupManifest({
       },
     },
     electrs: {
-      description: {
-        en_US:
-          'Optional: looks up your wallets on your own node. Used automatically when installed and Fulcrum is not.',
-      },
+      description: electrsDescription,
       optional: true,
       metadata: {
         title: 'Electrs',
@@ -45,10 +45,7 @@ export const manifest = setupManifest({
       },
     },
     ollama: {
-      description: {
-        en_US:
-          'Optional: runs the assistant that answers questions about your records. Used automatically when installed.',
-      },
+      description: ollamaDescription,
       optional: true,
       metadata: {
         title: 'Ollama',

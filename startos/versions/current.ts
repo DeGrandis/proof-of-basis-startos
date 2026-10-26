@@ -4,6 +4,10 @@ export const current = VersionInfo.of({
   version: '0.1.2:0',
   releaseNotes: {
     en_US: 'First release for StartOS.',
+    es_ES: 'Primera versión para StartOS.',
+    de_DE: 'Erste Version für StartOS.',
+    pl_PL: 'Pierwsze wydanie dla StartOS.',
+    fr_FR: 'Première version pour StartOS.',
   },
   migrations: {
     up: async ({ effects }) => {},
