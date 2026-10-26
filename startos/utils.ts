@@ -71,10 +71,9 @@ export const dataMounts = sdk.Mounts.of().mountVolume({
 })
 
 /**
- * StartOS mounts volumes owned by root, and the image (run as 65532, with no
- * shell to chown with) couldn't write to them. Remapping ownership on the
- * mount (idmap) isn't permitted from inside the container on StartOS before
- * 0.4.0.2, so the app runs as root in its (unprivileged) container instead.
- * Numeric, because the image has no /etc/passwd to look a name up in.
+ * StartOS mounts volumes owned by root, which the image's own user (65532)
+ * can't write to. Remapping ownership on the mount (idmap) isn't permitted
+ * from inside the container on StartOS before 0.4.0.2, so the app runs as
+ * root in its (unprivileged) container instead.
  */
 export const runAs = '0:0'
