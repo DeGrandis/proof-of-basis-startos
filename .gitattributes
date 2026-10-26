@@ -1,0 +1,4 @@
+# LF everywhere: the package is built on Linux, and a CRLF checkout counts
+# as a modified tree in the build.
+* text=auto eol=lf
+*.svg text eol=lf
