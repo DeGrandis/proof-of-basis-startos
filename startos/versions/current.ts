@@ -1,18 +1,18 @@
 import { IMPOSSIBLE, VersionInfo } from '@start9labs/start-sdk'
 
 export const current = VersionInfo.of({
-  version: '0.1.3:0',
+  version: '0.1.4:0',
   releaseNotes: {
     en_US:
-      'Cash App imports. The assistant can use a hosted provider such as OpenRouter (off unless you choose it, after confirming the provider will see your data), and is more reliable with small local models. Imported files are kept so you can download them again. The app is available in Spanish, French, German, Polish and Russian.',
+      "Advanced backup: send an encrypted backup of your records to S3-compatible storage (such as Backblaze B2 or a self-hosted Garage) on a schedule. It uploads only when your data has changed. The app's version now has its own line at the bottom of each page.",
     es_ES:
-      'Importa exportaciones de Cash App. El asistente puede usar un proveedor en la nube como OpenRouter (desactivado salvo que lo elijas, tras confirmar que el proveedor verá tus datos) y es más fiable con modelos locales pequeños. Los archivos importados se guardan para que puedas descargarlos de nuevo. La app está disponible en español, francés, alemán, polaco y ruso.',
+      'Copia de seguridad avanzada: envía una copia cifrada de tus registros a un almacenamiento compatible con S3 (como Backblaze B2 o un Garage propio) de forma programada. Solo la sube cuando tus datos han cambiado. La versión de la app ahora aparece en su propia línea al pie de cada página.',
     de_DE:
-      'Import von Cash-App-Exporten. Der Assistent kann einen gehosteten Anbieter wie OpenRouter nutzen (aus, solange Sie ihn nicht wählen und bestätigen, dass der Anbieter Ihre Daten sieht) und arbeitet mit kleinen lokalen Modellen zuverlässiger. Importierte Dateien werden aufbewahrt, sodass Sie sie erneut herunterladen können. Die App gibt es auf Spanisch, Französisch, Deutsch, Polnisch und Russisch.',
+      'Erweiterte Sicherung: Senden Sie nach Zeitplan eine verschlüsselte Sicherung Ihrer Daten an S3-kompatiblen Speicher (etwa Backblaze B2 oder ein selbst betriebenes Garage). Hochgeladen wird nur, wenn sich Ihre Daten geändert haben. Die Version der App steht jetzt in einer eigenen Zeile am Ende jeder Seite.',
     pl_PL:
-      'Import eksportów z Cash App. Asystent może korzystać z dostawcy w chmurze, takiego jak OpenRouter (wyłączone, dopóki go nie wybierzesz i nie potwierdzisz, że dostawca zobaczy Twoje dane), i działa pewniej z małymi modelami lokalnymi. Importowane pliki są zachowywane, więc możesz je ponownie pobrać. Aplikacja jest dostępna po hiszpańsku, francusku, niemiecku, polsku i rosyjsku.',
+      'Zaawansowana kopia zapasowa: wysyłaj według harmonogramu zaszyfrowaną kopię swoich danych do magazynu zgodnego z S3 (np. Backblaze B2 lub własnego Garage). Kopia jest przesyłana tylko wtedy, gdy Twoje dane się zmieniły. Wersja aplikacji jest teraz w osobnej linii na dole każdej strony.',
     fr_FR:
-      "Import des exports Cash App. L'assistant peut utiliser un fournisseur hébergé comme OpenRouter (désactivé sauf si vous le choisissez, après avoir confirmé que le fournisseur verra vos données) et est plus fiable avec les petits modèles locaux. Les fichiers importés sont conservés pour que vous puissiez les télécharger à nouveau. L'application est disponible en espagnol, français, allemand, polonais et russe.",
+      "Sauvegarde avancée : envoyez selon un calendrier une sauvegarde chiffrée de vos données vers un stockage compatible S3 (comme Backblaze B2 ou un Garage auto-hébergé). Elle n'est envoyée que si vos données ont changé. La version de l'application figure désormais sur sa propre ligne en bas de chaque page.",
   },
   migrations: {
     up: async ({ effects }) => {},
