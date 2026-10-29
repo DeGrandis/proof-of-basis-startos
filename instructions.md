@@ -10,7 +10,7 @@ Proof of Basis keeps your bitcoin cost basis and tax records on this server. You
 
 1. Start **Proof of Basis**, then open the **Web UI** interface.
 2. Choose a password. This is the password for Proof of Basis itself; the first person to open it sets it.
-3. Import your exchange exports (Coinbase, River, Strike, Fold, or a spreadsheet of your own), and add your wallets.
+3. Import your exchange exports (Cash App, Coinbase, Fold, River, Strike, or a spreadsheet of your own), and add your wallets.
 
 ## Node services
 

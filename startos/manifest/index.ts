@@ -19,10 +19,10 @@ export const manifest = setupManifest({
   volumes: ['main', 'startos'],
   images: {
     'proof-of-basis': {
-      // The 0.1.2 release, pinned by its multi-arch (amd64 + arm64) digest.
+      // The 0.1.3 release, pinned by its multi-arch (amd64 + arm64) digest.
       source: {
         dockerTag:
-          'ghcr.io/degrandis/proof-of-basis:0.1.2@sha256:4f126ef7d0a925db29cc06a86a5904f75048ce99a661c5d942bc4cfe036fb834',
+          'ghcr.io/degrandis/proof-of-basis:0.1.3@sha256:c5723354c97813285abb5ea0ffc4140bf2a2ba8b90ac4b2adfc0f4277987201e',
       },
       arch: ['x86_64', 'aarch64'],
     },
