@@ -1,12 +1,6 @@
 import { i18n } from './i18n'
 import { sdk } from './sdk'
-import {
-  chosenIndexer,
-  chosenOllama,
-  dataMounts,
-  runAs,
-  uiPort,
-} from './utils'
+import { chosenIndexer, chosenOllama, dataMounts, runAs, uiPort } from './utils'
 
 export const main = sdk.setupMain(async ({ effects }) => {
   console.info(i18n('Starting Proof of Basis'))
